@@ -19,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main1);
         recyclerView= (RecyclerView) findViewById(R.id.recycle_view);
         toolbar= (Toolbar) findViewById(R.id.toolbar);
         collapsingToolbar= (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         adapter=new LangAdapter(this);
         setSupportActionBar(toolbar);
         collapsingToolbar.setTitle("122");
-        collapsingToolbar.setContentScrimColor(0xffFF4081);
+        collapsingToolbar.setContentScrimColor(0x7d000000);
         adapter.setListener(new LangViewHolder.OnEventListener() {
             @Override
             public void onClick(View view, int position) {
